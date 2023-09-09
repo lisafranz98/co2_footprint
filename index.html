@@ -6,8 +6,122 @@
     <link rel="stylesheet" href="extern/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Der Carbon-Wächter</title>
+    <link rel="icon" type="image/svg" sizes="32x32" href="assets/img/logo.svg">
 </head>
 <body>
+<nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.svg" alt="logo" width="50" height="50">
+            <span>Der Carbon-Wächter</span>
+        </a>
+
+        <!-- Toggle-Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Globale Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Presse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Sprache
+                    </a>
+                    <ul class="dropdown-menu" id="languageSelector" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#" id="lang-de" data-lang="de">Deutsch</a></li>
+                        <li><a class="dropdown-item" href="#" id="lang-en" data-lang="en">English</a></li>
+                        <li><a class="dropdown-item" href="#" id="lang-ar" data-lang="ar">العربية</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <!-- Lokales Menü -->
+        <div class="col-12 col-md-2" id="local-menu">
+            <ul>
+                <li><a href="#about">Über uns</a></li>
+                <!-- Weitere lokale Links hier -->
+                <li><a href="#content">Unser Inhalt</a></li>
+                <li><a href="#services">Dienstleistungen</a></li>
+            </ul>
+        </div>
+        <!-- Content-Bereich -->
+        <div class="col-12 col-md-9 mx-auto">
+            <!-- Hauptinhalt hier -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Tincidunt praesent semper feugiat nibh sed pulvinar.
+            </p>
+            <section id="about">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2>Über uns</h2>
+                        <!-- Inhalt für den ersten Bereich hier -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="assets/img/logo.svg" width="500" height="500" alt="">
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Zweiter horizontaler Bereich -->
+            <section id="content">
+                <div class="row">
+                    <div class="col">
+                        <h2>Unser Inhalt</h2>
+                        <!-- Inhalt für den zweiten Bereich hier -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dritter horizontaler Bereich -->
+            <section id="services">
+                <div class="row">
+                    <div class="col">
+                        <h2>Dienstleistungen</h2>
+                        <!-- Inhalt für den dritten Bereich hier -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container text-center">
+        <p>&copy; 2023 Deine Webseite. Alle Rechte vorbehalten.</p>
+        <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+    </div>
+</footer>
 
 <script src="extern/js/bootstrap.bundle.js"></script>
 <script src="assets/js/scripts.js"></script>
