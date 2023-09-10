@@ -64,3 +64,20 @@ function moveSidebarBasedOnLanguage(lang) {
         contentArea.insertAdjacentElement('beforebegin', sidebar);
     }
 }
+
+let scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top:0,
+        behavior: 'smooth'
+    })
+}
