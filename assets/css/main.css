@@ -69,3 +69,44 @@ button, .btn {
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
+
+#menu-toggle-btn {
+    display: none;
+    transition: left 0.3s;
+
+    background-color: var(--background-cream);
+    color: black;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#menu-toggle-btn:hover {
+    background-color: #E5D8C6;
+}
+
+@media (max-width: 768px) {
+    #local-menu {
+        position: fixed;
+        left: -300px;
+        top: 0;
+        height: 100%;
+        transition: left 0.3s;
+        z-index: 1000;
+    }
+
+    #local-menu.open {
+        left: 0;
+    }
+
+    #menu-toggle-btn {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 420px;
+        z-index: 1100;
+    }
+}

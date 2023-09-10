@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const menuToggleBtn = document.createElement('button');
+    menuToggleBtn.id = 'menu-toggle-btn';
+    menuToggleBtn.innerHTML = '→';
+    document.body.appendChild(menuToggleBtn);
+
+    menuToggleBtn.addEventListener('click', function() {
+        const sidebar = document.getElementById('local-menu');
+        if (sidebar.style.left === '0px') {
+            sidebar.style.left = '-300px';
+            menuToggleBtn.style.left = '0px';
+            menuToggleBtn.innerHTML = '→';
+        } else {
+            sidebar.style.left = '0px';
+            menuToggleBtn.style.left = '158px';
+            menuToggleBtn.innerHTML = '←';
+        }
+    });
+
     const table = document.querySelector('table');
     let isAscending = true;
 
