@@ -99,3 +99,11 @@ function scrollToTop() {
         behavior: 'smooth'
     })
 }
+
+document.getElementById('filterEmitter').addEventListener('input', function(e) {
+    const value = e.target.value;
+    if (/[^A-Za-z\s]/.test(value)) {
+        alert('Ungültige Eingabe! Bitte nur Buchstaben verwenden.');
+        e.target.value = value.replace(/[^A-Za-z\s]/g, '');
+    }
+});
